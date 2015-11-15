@@ -15,7 +15,7 @@
     (define (sqrt-iter guess)  
         (new-if (good-enough? guess)          ; <-- new-if 在这里，替换成 if 即可正常使用
             guess
-            (sqrt-iter (improve guess))))
+            (sqrt-iter (guess))))
     (sqrt-iter 1.0)
     )
 
