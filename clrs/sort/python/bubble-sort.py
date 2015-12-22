@@ -11,7 +11,5 @@ else:
     for i in range(size):
         for j in range(size - i - 1):
             if input[j] > input[j + 1]:
-                temp = input[j]
-                input[j] = input[j + 1]
-                input[j + 1] = temp
+                input[j], input[j + 1] = input[j + 1], input[j]
     print(input)
